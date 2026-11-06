@@ -1,0 +1,99 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.dmypy/
+ruff_cache/
+pytestdebug.log
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =========================
+# IDE и редакторы
+# =========================
+# VS Code
+.vscode/
+.history
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# VS
+.vscode/
+.history
+
+# =========================
+# ОС и служебные файлы
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+
+# =========================
+# Локальные базы данных и секреты
+# =========================
+*.sqlite3
+*.db
+*.sqlite
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+secrets/
+*.key
+*.pem
+*.crt
+config/local.py
+config/secrets.py
