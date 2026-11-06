@@ -85,7 +85,6 @@ Desktop.ini
 # Локальные базы данных и секреты
 # =========================
 *.sqlite3
-*.db
 *.sqlite
 .env.local
 .env.development.local
