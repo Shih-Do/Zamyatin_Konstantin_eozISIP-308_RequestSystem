@@ -97,3 +97,13 @@ secrets/
 *.crt
 config/local.py
 config/secrets.py
+
+# Игнорируем служебные папки Visual Studio / VS Code
+.vs/
+.vscode/
+
+# Игнорируем файлы настроек DB Browser
+*.sqbpro
+
+# (Опционально) Если вы не хотите коммитить саму базу данных, раскомментируйте:
+# *.db 
