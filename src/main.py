@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from src.controllers.request_router import router as request_router
+<<<<<<< HEAD
 
 app = FastAPI(
     title="RequestSystem API",
@@ -10,6 +11,10 @@ app = FastAPI(
 # Подключаем наш роутер
 app.include_router(request_router)
 
+=======
+app = FastAPI(title="RequestSystem API", description="API для системы учёта заявок", version="1.0.0")
+app.include_router(request_router)
+>>>>>>> feature/lab6
 @app.get("/")
 def root():
     return {"message": "Добро пожаловать в RequestSystem API!"}
