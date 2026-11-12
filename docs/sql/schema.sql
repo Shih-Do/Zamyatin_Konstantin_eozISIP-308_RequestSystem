@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS Requests (
     number TEXT UNIQUE NOT NULL, -- Формат #YYYY-NNNN
     title TEXT NOT NULL,
     description TEXT,
+    priority TEXT NOT NULL DEFAULT 'Средний' CHECK(priority IN ('Низкий', 'Средний', 'Высокий')), -- ДОБАВЛЕНО ПОЛЕ ПРИОРИТЕТА
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     deadline DATETIME,
