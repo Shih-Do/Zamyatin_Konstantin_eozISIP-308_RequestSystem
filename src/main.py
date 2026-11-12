@@ -15,3 +15,7 @@ app.include_router(reference_router)
 @app.get("/")
 def root():
     return {"message": "Добро пожаловать в RequestSystem API!"}
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok", "service": "RequestSystem API"}
