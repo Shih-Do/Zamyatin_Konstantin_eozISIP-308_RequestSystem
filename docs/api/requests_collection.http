@@ -1,0 +1,23 @@
+### 1. Создать заявку (POST)
+POST http://127.0.0.1:8000/api/v1/requests/
+Content-Type: application/json
+
+{
+  "title": "Не работает принтер",
+  "description": "Замять бумаги в лотке 2",
+  "priority": "Средний",
+  "category_id": 1,
+  "author_id": 4
+}
+
+### 2. Получить список заявок с фильтром по статусу (GET)
+GET http://127.0.0.1:8000/api/v1/requests/?status_id=2
+
+### 3. Получить справочник пользователей (GET)
+GET http://127.0.0.1:8000/api/v1/users
+
+### 4. Получить справочник статусов (GET)
+GET http://127.0.0.1:8000/api/v1/statuses
+
+### 5. Получить справочник категорий (GET)
+GET http://127.0.0.1:8000/api/v1/categories
